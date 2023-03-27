@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Basic Template</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, dd {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul, ol {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+	border: none;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1em;
+}
+#header{
+	height: 70px;
+	min-width: 1260px;
+	background-color: #0e216d;
+}
+#header .menu{
+	width: 1260px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+#header .menu .logo{
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+#header .menu .quick{
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateY(50%);
+}
+#header .menu .quick li{
+	display: inline-block;	
+	margin-left: 25px;
+}
+#header .menu .quick li a{
+	display: block;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 15px;
+	font-size: 12px;
+}
+#gnb{
+	text-align: center;
+	font-size: 0;
+}
+#gnb > ul > li{
+	display: inline-block;
+	position: relative;
+}
+#gnb > ul > li > a{
+	display: block;
+	padding: 0 24px;
+	line-height: 70px;
+	font-size: 16px;
+	color: #fff;
+}
+#gnb >ul > li:hover > a,
+#gnb >ul > li.active > a{
+	display: #fff;
+}
+#gnb li ul{
+	display: none;
+	position: absolute;
+	width: 150%;
+	left: -25%;
+}
+#gnb ul li:hover ul{
+	display: block;
+}
+#gnb li li {
+	border-bottom: 1px solid #404f62;
+}
+#gnb li li a{
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	font-size: 12px;
+	font-weight: 800;
+	text-align: left;
+	background-color: #0e216d;
+	color: #fff;
+	transition: all 300ms;
+}
+</style>
+</head>
+
+<body>
+<header id="header">
+	<!-- <div class="top">
+		<div class="tab"><a href="">기업소개</a></div>
+		<div class="login">
+			<ul>
+				<li><a href="">LOGIN</a></li>
+				<li><a href="">JOIN</a></li>
+				<li><a href="">CONTACTS US</a></li>
+			</ul>
+		</div>
+		<div class="server"><a href="">개인정보처리방침</a></div>
+	</div> -->
+	<div class="menu">
+		<div class="menu_inner">
+			<div class="logo"><a href=""><img src="images/logo.png" alt="logo"></a></div>
+			<nav id="gnb">
+				<ul>
+					<li><a href="">Brand Story</a>
+						<ul>
+							<li><a href="">브랜드 소개</a></li>
+							<li><a href="">모델소개</a></li>
+							<li><a href="">파크랜드 AD</a></li>
+						</ul>
+					</li>
+					<li><a href="">Style</a>
+						<ul>
+							<li><a href="">Lookbook</a></li>
+							<li><a href="">Catalog</a></li>
+						</ul>
+					</li>
+					<li><a href="">Store</a>
+						<ul>
+							<li><a href="">매장검색</a></li>
+							<li><a href="">매장개설문의</a></li>
+						</ul>
+					</li>
+					<li><a href="">News & Event</a>
+						<ul>
+							<li><a href="">News</a></li>
+							<li><a href="">Event</a></li>
+						</ul>
+					</li>
+					<li><a href="">Community</a>
+						<ul>
+							<li><a href="">신사의 품격</a></li>
+							<li><a href="">패션노하우</a></li>
+							<li><a href="">월페이퍼</a></li>
+							<li><a href="">파크랜드 수트지존 선발대회</a></li>
+							<li><a href="">드림옷장</a></li>
+						</ul>
+					</li>
+					<li><a href="">C/S Center</a>
+						<ul>
+							<li><a href="">멤버스 가입</a></li>
+							<li><a href="">A/S 안내</a></li>
+							<li><a href="">고객상담</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="quick">
+				<ul>
+					<li><a href="">FAMILY BRAND</a></li>
+					<li><a href="">ONLINE SHOP</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+</body>
+</html>
